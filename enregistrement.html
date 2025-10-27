@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enregistrement des postulants - AFAIJ</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1c3d5a;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background-color: #1c3d5a;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #2e5b8a;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire d’Enregistrement - AFAIJ</h1>
+    <form action="mailto:academieafaij@gmail.com" method="POST" enctype="text/plain">
+      <label>Nom complet :</label>
+      <input type="text" name="Nom complet" required>
+
+      <label>Adresse e-mail :</label>
+      <input type="email" name="Email" required>
+
+      <label>Téléphone :</label>
+      <input type="tel" name="Téléphone" required>
+
+      <label>Date de naissance :</label>
+      <input type="date" name="Date de naissance" required>
+
+      <label>Âge :</label>
+      <input type="number" name="Âge" min="15" max="100" required>
+
+      <label>Niveau d’étude / formation :</label>
+      <input type="text" name="Niveau d’étude" required>
+
+      <label>Motivation :</label>
+      <textarea name="Motivation" placeholder="Explique brièvement pourquoi tu veux rejoindre l’AFAIJ..." required></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+
+    <div class="footer">
+      © 2025 AFAIJ — Tous droits réservés
+    </div>
+  </div>
+</body>
+</html>
