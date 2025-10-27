@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://afaij-tech.github.io/Afaij-site/sitemap.xml
