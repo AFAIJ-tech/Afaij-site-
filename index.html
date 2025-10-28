@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AFAIJ — Académie de Formation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFAIJ – Académie de Formation</title>
 
-  <!-- Police (modifiable facilement) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Change "Montserrat" par une autre police si besoin -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Académie de Formation d’Accompagnement et d’Intégration des Jeunes" />
 
+  <!-- Liens de style -->
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Académie de Formation d’Accompagnement et d’Intégration des Jeunes — AFAIJ">
-</head>
-  <meta name="google-site-verification" content="er-1TAPDw-e2yNhyg4ZygMiAxNhhTzK5yVxAhF43a_I" />
-<!-- Bouton vers la page d'enregistrement AFAIJ -->
-<div style="text-align:center; margin: 40px 0;">
-  <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFAIJ — Académie de Formation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Feuille de style intégrée -->
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9fafb;
       color: #111827;
-      text-align: center;
     }
 
     header {
       background-color: #14532d;
       color: white;
+      text-align: center;
       padding: 1.5rem 0;
     }
 
@@ -47,233 +33,145 @@
     }
 
     nav {
-      margin-top: 0.5rem;
+      text-align: center;
+      margin: 1rem 0;
     }
 
     nav a {
       color: white;
-      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 500;
+      margin: 0 1rem;
+      font-weight: 600;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* Bouton d'inscription */
-    .btn-inscription {
-      display: inline-block;
-      background-color: #1e3a8a;
-      color: #fff;
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+    .cta-row {
+      text-align: center;
       margin: 2rem 0;
     }
 
-    .btn-inscription:hover {
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 0.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-success {
+      background-color: #16a34a;
+      color: white;
+    }
+
+    .btn-success:hover {
+      background-color: #15803d;
+      transform: scale(1.05);
+    }
+
+    .btn-primary {
       background-color: #1d4ed8;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #1e40af;
+      transform: scale(1.05);
+    }
+
+    .btn-ghost {
+      border: 2px solid #1d4ed8;
+      color: #1d4ed8;
+    }
+
+    .btn-ghost:hover {
+      background-color: #1d4ed8;
+      color: white;
       transform: scale(1.05);
     }
 
     section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    h2 {
-      color: #14532d;
-    }
-
-    .btn-principal {
-      display: inline-block;
-      background-color: #166534;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .btn-principal:hover {
-      background-color: #15803d;
-      transform: scale(1.05);
+      max-width: 900px;
+      margin: 3rem auto;
+      text-align: center;
+      padding: 1rem;
     }
 
     footer {
       background-color: #14532d;
       color: white;
+      text-align: center;
       padding: 1rem;
-      margin-top: 3rem;
     }
   </style>
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
-    <h1>AFAIJ — Académie de Formation</h1>
+    <h1>Académie de Formation AFAIJ</h1>
+    <p>Formez-vous pour un avenir meilleur</p>
     <nav>
       <a href="#formations">Formations</a>
-      <a href="#inscription">S’inscrire</a>
+      <a href="#pourquoi">Pourquoi nous choisir</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Section principale -->
-  <section>
-    <h2>Académie de Formation d’Accompagnement et d’Intégration des Jeunes</h2>
-    <p>
-      Développez vos compétences manuelles et numériques avec nos formations
-      professionnelles adaptées aux besoins du marché du travail.
-    </p>
+  <!-- ACCUEIL -->
+  <section id="accueil">
+    <h2>Bienvenue à l’AFAIJ</h2>
+    <p>Développez vos compétences professionnelles avec nos formations pratiques et certifiées.</p>
 
-    <!-- Bouton d'inscription intégré proprement -->
-    <a href="https://forms.gle/inscriptionAFAIJ" class="btn-inscription">
-      📝 S’inscrire à l’AFAIJ
-    </a>
-
-    <div>
-      <a href="#formations" class="btn-principal">Découvrir nos formations</a>
+    <div class="cta-row">
+      <a class="btn btn-success" href="inscription.html">📝 S’inscrire</a>
+      <a class="btn btn-primary" href="#formations">Découvrir nos formations</a>
+      <a class="btn btn-ghost" href="#contact">Nous contacter</a>
     </div>
   </section>
 
-  <footer id="contact">
-    <p>📞 Contactez-nous : contact@afaij.org</p>
-    <p>© 2025 AFAIJ — Tous droits réservés</p>
-  </footer>
-</body>
-</html>
-  <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-row">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">🎓</div>
-        <div class="brand-text">
-          <span class="brand-title">AFAIJ</span>
-          <span class="brand-subtitle">Académie de Formation</span>
-        </div>
-      </div>
+  <!-- FORMATIONS -->
+  <section id="formations">
+    <h2>Nos Formations</h2>
+    <p>Des programmes conçus pour vous donner les compétences recherchées par les employeurs.</p>
 
-      <nav class="nav">
-        <a href="#formations">Formations</a>
-        <a href="#pourquoi">Pourquoi nous ?</a>
-        <a href="#contact" class="btn btn-outline">Contact</a>
-      </nav>
+    <div>
+      <h3>🧱 Cloisons Sèches</h3>
+      <p>Apprenez les techniques professionnelles de pose et de finition.</p>
+
+      <h3>💻 Informatique & Numérique</h3>
+      <p>Maîtrisez les outils informatiques et boostez votre carrière.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1 class="hero-title">
-          Académie de Formation d’Accompagnement<br class="br-lg" />
-          et d’Intégration des Jeunes
-        </h1>
-        <p class="hero-subtitle">
-          Développez vos compétences manuelles et numériques avec nos formations professionnelles
-          adaptées aux besoins du marché du travail.
-        </p>
+  <!-- POURQUOI NOUS CHOISIR -->
+  <section id="pourquoi">
+    <h2>Pourquoi nous choisir ?</h2>
+    <ul style="list-style:none; padding:0;">
+      <li>✔ Formations certifiantes reconnues</li>
+      <li>✔ Accompagnement personnalisé</li>
+      <li>✔ Équipements modernes</li>
+      <li>✔ Réseau d’entreprises partenaires</li>
+    </ul>
+  </section>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#formations">Découvrir nos formations</a>
-          <a class="btn btn-ghost" href="#contact">Nous contacter</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMATIONS -->
-    <section id="formations" class="section">
-      <div class="container">
-        <h2 class="section-title">Nos Formations</h2>
-        <p class="section-intro">
-          Des programmes complets conçus pour vous donner les compétences pratiques demandées par les employeurs.
-        </p>
-
-        <div class="cards">
-          <!-- Carte 1 -->
-          <article class="card">
-            <h3 class="card-title">Formation Cloisons Sèches</h3>
-            <p class="chips">
-              <span class="chip">1 à 2 semaines</span>
-              <span class="chip">Débutant à Avancé</span>
-            </p>
-            <p class="card-text">
-              Apprenez les techniques professionnelles de pose et de finition des cloisons sèches.
-            </p>
-          </article>
-
-          <!-- Carte 2 -->
-          <article class="card">
-            <h3 class="card-title">Informatique & Numérique</h3>
-            <p class="chips">
-              <span class="chip">1 mois</span>
-              <span class="chip">Tous niveaux</span>
-            </p>
-            <p class="card-text">
-              Maîtrisez les outils informatiques et développez vos compétences numériques.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- POURQUOI NOUS CHOISIR -->
-    <section id="pourquoi" class="section section-muted">
-      <div class="container">
-        <h2 class="section-title">Pourquoi nous choisir&nbsp;?</h2>
-
-        <ul class="features">
-          <li class="feature">
-            <span class="check" aria-hidden="true">✔</span>
-            <span>Formations certifiantes reconnues</span>
-          </li>
-          <li class="feature">
-            <span class="check" aria-hidden="true">✔</span>
-            <span>Accompagnement personnalisé</span>
-          </li>
-          <li class="feature">
-            <span class="check" aria-hidden="true">✔</span>
-            <span>Équipements modernes et professionnels</span>
-          </li>
-          <li class="feature">
-            <span class="check" aria-hidden="true">✔</span>
-            <span>Réseau d’entreprises partenaires</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container contact-inner">
-        <div class="contact-text">
-          <h2 class="section-title">Contactez-nous</h2>
-          <p>Prêt à commencer votre formation&nbsp;? Notre équipe est là pour vous accompagner.</p>
-        </div>
-
-        <div class="contact-actions">
-          <!-- WhatsApp : num au format international sans + ni espaces -->
-          <a class="btn btn-primary" href="https://wa.me/50939229300">📱 WhatsApp</a>
-          <!-- Email : les emails n’acceptent pas les accents → usage sans accent -->
-          <a class="btn btn-outline" href="mailto:academieafaij@gmail.com">📧 Email</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Prêt à commencer votre formation ?</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://wa.me/50939229300">📱 WhatsApp</a>
+      <a class="btn btn-ghost" href="mailto:academieafaij@gmail.com">📧 Email</a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 AFAIJ — Académie de Formation</p>
-    </div>
+  <footer>
+    <p>© 2025 AFAIJ — Académie de Formation</p>
   </footer>
 </body>
 </html>
