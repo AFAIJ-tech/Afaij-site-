@@ -1,63 +1,17 @@
 <section class="p-6 bg-gray-100 rounded-2xl shadow-md max-w-lg mx-auto">
   <h2 class="text-2xl font-bold mb-4 text-center">Inscription des postulants</h2>
-  
-  <form id="inscriptionForm" action="https://formspree.io/f/mnqwvxyz" method="POST" class="space-y-4">
-    
-    <!-- Nom -->
-    <div>
-      <label for="nom" class="block font-medium">Nom complet</label>
-      <input type="text" id="nom" name="nom" required class="w-full p-2 border rounded-lg">
-    </div>
-    
-    <!-- Âge -->
-    <div>
-      <label for="age" class="block font-medium">Âge</label>
-      <input type="number" id="age" name="age" min="16" required class="w-full p-2 border rounded-lg">
-      <p class="text-sm text-gray-500">* Vous devez avoir plus de 16 ans</p>
-    </div>
-    
-    <!-- Email -->
-    <div>
-      <label for="email" class="block font-medium">Adresse e-mail</label>
-      <input type="email" id="email" name="email" required class="w-full p-2 border rounded-lg">
-    </div>
-    
-    <!-- Mode de paiement -->
-    <div>
-      <label for="paiement" class="block font-medium">Mode de paiement</label>
-      <select id="paiement" name="paiement" required class="w-full p-2 border rounded-lg">
-        <option value="">-- Sélectionnez --</option>
-        <option value="moncash">MonCash (+509 44050673)</option>
-        <option value="natcash">NatCash (+509 40036377)</option>
-      </select>
-      <p class="text-sm text-red-600 font-semibold">* Les frais ne sont pas remboursables</p>
-    </div>
-    <!-- Choix de la formation -->
-<div>
-  <label for="formation" class="block font-medium">Choix de la formation</label>
-  <select id="formation" name="formation" required class="w-full p-2 border rounded-lg">
-    <option value="">-- Sélectionnez une formation --</option>
-    <option value="informatique">Informatique et Bureautique</option>
-    <option value="menuserie">Menuiserie et Fabrication</option>
-    <option value="electricite">Électricité et Installation</option>
-    <option value="couture">Couture et Stylisme</option>
-    <option value="agriculture">Techniques Agricoles</option>
-    <option value="autre">Autre (à préciser dans la motivation)</option>
-  </select>
-</div>
-    <!-- Bouton -->
-    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700">
-      S'inscrire
-    </button>
-  </form>
-</section>
 
-<script>
-  document.getElementById("inscriptionForm").addEventListener("submit", function(e) {
-    const age = document.getElementById("age").value;
-    if (age < 16) {
-      alert("Vous devez avoir plus de 16 ans pour vous inscrire !");
-      e.preventDefault();
-    }
-  });
-      </script>
+  <p class="text-center text-gray-700 mb-6">
+    Cliquez sur le bouton ci-dessous pour remplir le formulaire d’inscription officiel.
+  </p>
+
+  <div class="text-center">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc48dGgz0rYiEVW1oC4H12G7dOs7sC0XgoP4-4m0fYd30lelg/viewform?usp=preview"
+      target="_blank"
+      class="inline-block bg-green-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-green-700 transition"
+    >
+      📝 S’inscrire maintenant
+    </a>
+  </div>
+</section>
