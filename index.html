@@ -1,24 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AFAIJ – Académie de Formation</title>
-
+  <title>AFAIJ - Académie de Formation</title>
   <meta name="description" content="Académie de Formation d’Accompagnement et d’Intégration des Jeunes" />
 
   <!-- Liens de style -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="Logo-afaij.png">
+  <link rel="icon" type="image/png" href="Logo-afaij.png" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    <header style="display: flex; align-items: center; justify-content: center; gap: 15px; padding: 10px; background-color: #f5f5f5;">
-  <img src="Logo-afaij.png" alt="Logo AFAIJ" width="100" style="border-radius: 10px;">
-  <h1 style="font-size: 22px; color: #000; text-align: center;">
-    Académie de Formation d’Accompagnement et d’Intégration des Jeunes
-  </h1>
-</header>
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -28,20 +22,32 @@
     }
 
     header {
-      background-color: #14532d;
-      color: white;
-      text-align: center;
-      padding: 1.5rem 0;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      border-bottom: 2px solid #14532d;
+    }
+
+    header img {
+      width: 100px;
+      border-radius: 10px;
     }
 
     header h1 {
+      font-size: 22px;
+      color: #000;
       margin: 0;
-      font-size: 1.8rem;
+      text-align: center;
     }
 
     nav {
       text-align: center;
       margin: 1rem 0;
+      background-color: #14532d;
+      padding: 10px 0;
     }
 
     nav a {
@@ -49,10 +55,12 @@
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
+      transition: color 0.3s;
     }
 
     nav a:hover {
       text-decoration: underline;
+      color: #e0e0e0;
     }
 
     .cta-row {
@@ -90,95 +98,44 @@
       transform: scale(1.05);
     }
 
-    .btn-ghost {
-      border: 2px solid #1d4ed8;
-      color: #1d4ed8;
-    }
-
-    .btn-ghost:hover {
-      background-color: #1d4ed8;
-      color: white;
-      transform: scale(1.05);
-    }
-
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      text-align: center;
-      padding: 1rem;
-    }
-
     footer {
       background-color: #14532d;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1rem 0;
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!-- En-tête avec logo -->
   <header>
-    <h1>Académie de Formation AFAIJ</h1>
-    <p>Formez-vous pour un avenir meilleur</p>
-    <nav>
-      <a href="#formations">Formations</a>
-      <a href="#pourquoi">Pourquoi nous choisir</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <img src="Logo-afaij.png" alt="Logo AFAIJ">
+    <h1>Académie de Formation d’Accompagnement et d’Intégration des Jeunes</h1>
   </header>
 
-  <!-- ACCUEIL -->
-  <section id="accueil">
-    <h2>Bienvenue à l’AFAIJ</h2>
-    <p>Développez vos compétences professionnelles avec nos formations pratiques et certifiées.</p>
+  <!-- Menu de navigation -->
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#">Formations</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <div class="cta-row">
-      <a class="btn btn-success" href="inscription.html">📝 S’inscrire</a>
-      <a class="btn btn-primary" href="#formations">Découvrir nos formations</a>
-      <a class="btn btn-ghost" href="#contact">Nous contacter</a>
-    </div>
-  </section>
+  <!-- Section principale -->
+  <main>
+    <section class="cta-row">
+      <h2>Bienvenue à l’AFAIJ</h2>
+      <p>Découvrez nos formations pour accompagner et intégrer les jeunes vers un avenir meilleur.</p>
+      <a href="#" class="btn btn-success">S'inscrire</a>
+      <a href="#" class="btn btn-primary">En savoir plus</a>
+    </section>
+  </main>
 
-  <!-- FORMATIONS -->
-  <section id="formations">
-    <h2>Nos Formations</h2>
-    <p>Des programmes conçus pour vous donner les compétences recherchées par les employeurs.</p>
-
-    <div>
-      <h3>🧱 Cloisons Sèches</h3>
-      <p>Apprenez les techniques professionnelles de pose et de finition.</p>
-
-      <h3>💻 Informatique & Numérique</h3>
-      <p>Maîtrisez les outils informatiques et boostez votre carrière.</p>
-    </div>
-  </section>
-
-  <!-- POURQUOI NOUS CHOISIR -->
-  <section id="pourquoi">
-    <h2>Pourquoi nous choisir ?</h2>
-    <ul style="list-style:none; padding:0;">
-      <li>✔ Formations certifiantes reconnues</li>
-      <li>✔ Accompagnement personnalisé</li>
-      <li>✔ Équipements modernes</li>
-      <li>✔ Réseau d’entreprises partenaires</li>
-    </ul>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Prêt à commencer votre formation ?</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://wa.me/50939229300">📱 WhatsApp</a>
-      <a class="btn btn-ghost" href="mailto:academieafaij@gmail.com">📧 Email</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- Pied de page -->
   <footer>
-    <p>© 2025 AFAIJ — Académie de Formation</p>
+    <p>&copy; 2025 AFAIJ - Tous droits réservés</p>
   </footer>
 </body>
 </html>
