@@ -1,14 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AFAIJ - Académie de Formation</title>
-  <meta name="description" content="Académie de Formation d’Accompagnement et d’Intégration des Jeunes" />
-
-  <!-- Liens de style -->
-  <link rel="stylesheet" href="style.css" />
+  <meta name="google-site-verification" content="b862055ad99b5173" />
+  <title>AFAIJ - Académie de Formation d’Accompagnement et d’Intégration des Jeunes</title>
+  <meta name="description" content="Académie de Formation d’Accompagnement et d’Intégration des Jeunes (AFAIJ) - Développer les compétences, accompagner les jeunes vers la réussite et l’intégration professionnelle.">
   <link rel="icon" type="image/png" href="Logo-afaij.png" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 
@@ -21,121 +18,160 @@
       color: #111827;
     }
 
+    /* Header */
     header {
-      background-color: #f5f5f5;
+      background-color: #14532d;
+      color: white;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    header .logo-container {
+      display: flex;
+      align-items: center;
       gap: 15px;
-      padding: 10px;
-      border-bottom: 2px solid #14532d;
     }
 
     header img {
-      width: 100px;
+      width: 80px;
+      height: auto;
       border-radius: 10px;
     }
 
     header h1 {
-      font-size: 22px;
-      color: #000;
+      font-size: 1.4rem;
+      line-height: 1.4;
       margin: 0;
-      text-align: center;
     }
 
+    header h1 span {
+      color: #facc15;
+    }
+
+    /* Navigation */
     nav {
-      text-align: center;
-      margin: 1rem 0;
-      background-color: #14532d;
-      padding: 10px 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: 600;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
 
     nav a:hover {
       text-decoration: underline;
-      color: #e0e0e0;
     }
 
-    .cta-row {
+    /* Section principale */
+    main {
       text-align: center;
-      margin: 2rem 0;
+      padding: 50px 20px;
     }
 
+    main h2 {
+      font-size: 2rem;
+      color: #14532d;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 1rem;
+      color: #374151;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      line-height: 1.6;
+    }
+
+    /* Boutons */
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      margin: 0.5rem;
+      padding: 12px 25px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: 600;
-      transition: 0.3s ease;
+      text-decoration: none;
+      transition: 0.3s;
+      margin: 10px;
     }
 
-    .btn-success {
+    .btn-primary {
       background-color: #16a34a;
       color: white;
     }
 
-    .btn-success:hover {
-      background-color: #15803d;
-      transform: scale(1.05);
-    }
-
-    .btn-primary {
-      background-color: #1d4ed8;
-      color: white;
-    }
-
     .btn-primary:hover {
-      background-color: #1e40af;
-      transform: scale(1.05);
+      background-color: #15803d;
     }
 
+    .btn-secondary {
+      background-color: #facc15;
+      color: #111;
+    }
+
+    .btn-secondary:hover {
+      background-color: #eab308;
+    }
+
+    /* Footer */
     footer {
-      background-color: #14532d;
+      background-color: #111827;
       color: white;
       text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <!-- En-tête avec logo -->
   <header>
-    <img src="Logo-afaij.png" alt="Logo AFAIJ">
-    <h1>Académie de Formation d’Accompagnement et d’Intégration des Jeunes</h1>
+    <div class="logo-container">
+      <img src="Logo-afaij.png" alt="Logo AFAIJ">
+      <h1>
+        <span>AFAIJ</span><br>
+        Académie de Formation d’Accompagnement et d’Intégration des Jeunes
+      </h1>
+    </div>
+    <nav>
+      <a href="#formation">Formations</a>
+      <a href="#accompagnement">Accompagnement</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- Menu de navigation -->
-  <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Formations</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <!-- Section principale -->
   <main>
-    <section class="cta-row">
-      <h2>Bienvenue à l’AFAIJ</h2>
-      <p>Découvrez nos formations pour accompagner et intégrer les jeunes vers un avenir meilleur.</p>
-      <a href="#" class="btn btn-success">S'inscrire</a>
-      <a href="#" class="btn btn-primary">En savoir plus</a>
-    </section>
+    <h2>Bienvenue à l’AFAIJ</h2>
+    <p>
+      Notre mission est de former, accompagner et intégrer les jeunes dans la vie professionnelle grâce à des programmes adaptés et innovants.
+    </p>
+
+    <a href="https://forms.gle/tonlienformulairegoogle" class="btn btn-primary" target="_blank">S'inscrire à une formation</a>
+    <a href="https://wa.me/50939229300" class="btn btn-secondary" target="_blank">Nous contacter sur WhatsApp</a>
   </main>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2025 AFAIJ - Tous droits réservés</p>
+  <footer id="contact">
+    <p>📍 Contactez-nous : <a href="mailto:academieafaij@gmail.com">academieafaij@gmail.com</a></p>
+    <p>📱 WhatsApp : <a href="https://wa.me/50939229300" target="_blank">+509 3922 9300</a></p>
+    <p>© 2025 AFAIJ — Tous droits réservés.</p>
   </footer>
 </body>
 </html>
